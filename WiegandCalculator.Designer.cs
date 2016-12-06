@@ -44,15 +44,17 @@
             this.TxtMaxCharResultLength = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.ChkIncludeCCinResults = new System.Windows.Forms.CheckBox();
+            this.CmdConvertHex = new System.Windows.Forms.Button();
+            this.TxtConvertHex = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // CmdGenerate
             // 
             this.CmdGenerate.Location = new System.Drawing.Point(212, 9);
             this.CmdGenerate.Name = "CmdGenerate";
-            this.CmdGenerate.Size = new System.Drawing.Size(114, 23);
+            this.CmdGenerate.Size = new System.Drawing.Size(134, 23);
             this.CmdGenerate.TabIndex = 0;
-            this.CmdGenerate.Text = "Generate";
+            this.CmdGenerate.Text = "Generate Hex";
             this.CmdGenerate.UseVisualStyleBackColor = true;
             this.CmdGenerate.Click += new System.EventHandler(this.CmdGenerate_Click);
             // 
@@ -111,9 +113,9 @@
             // 
             this.CmdBulkGen.Location = new System.Drawing.Point(212, 118);
             this.CmdBulkGen.Name = "CmdBulkGen";
-            this.CmdBulkGen.Size = new System.Drawing.Size(114, 23);
+            this.CmdBulkGen.Size = new System.Drawing.Size(134, 23);
             this.CmdBulkGen.TabIndex = 8;
-            this.CmdBulkGen.Text = "BulkGenerate";
+            this.CmdBulkGen.Text = "BulkGenerate Hex";
             this.CmdBulkGen.UseVisualStyleBackColor = true;
             this.CmdBulkGen.Click += new System.EventHandler(this.CmdBulkGen_Click);
             // 
@@ -131,7 +133,7 @@
             // 
             this.CmdClear.Location = new System.Drawing.Point(212, 147);
             this.CmdClear.Name = "CmdClear";
-            this.CmdClear.Size = new System.Drawing.Size(114, 23);
+            this.CmdClear.Size = new System.Drawing.Size(134, 23);
             this.CmdClear.TabIndex = 10;
             this.CmdClear.Text = "Clear";
             this.CmdClear.UseVisualStyleBackColor = true;
@@ -192,11 +194,30 @@
             this.ChkIncludeCCinResults.Text = "Include Card Code in results";
             this.ChkIncludeCCinResults.UseVisualStyleBackColor = true;
             // 
+            // CmdConvertHex
+            // 
+            this.CmdConvertHex.Location = new System.Drawing.Point(212, 241);
+            this.CmdConvertHex.Name = "CmdConvertHex";
+            this.CmdConvertHex.Size = new System.Drawing.Size(99, 23);
+            this.CmdConvertHex.TabIndex = 17;
+            this.CmdConvertHex.Text = "Convert Hex";
+            this.CmdConvertHex.UseVisualStyleBackColor = true;
+            this.CmdConvertHex.Click += new System.EventHandler(this.CmdConvertHex_Click);
+            // 
+            // TxtConvertHex
+            // 
+            this.TxtConvertHex.Location = new System.Drawing.Point(212, 270);
+            this.TxtConvertHex.Name = "TxtConvertHex";
+            this.TxtConvertHex.Size = new System.Drawing.Size(100, 22);
+            this.TxtConvertHex.TabIndex = 18;
+            // 
             // WiegandCalculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(422, 513);
+            this.ClientSize = new System.Drawing.Size(416, 513);
+            this.Controls.Add(this.TxtConvertHex);
+            this.Controls.Add(this.CmdConvertHex);
             this.Controls.Add(this.ChkIncludeCCinResults);
             this.Controls.Add(this.TxtMaxCharResultLength);
             this.Controls.Add(this.label5);
@@ -238,6 +259,8 @@
         private System.Windows.Forms.TextBox TxtMaxCharResultLength;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox ChkIncludeCCinResults;
+        private System.Windows.Forms.Button CmdConvertHex;
+        private System.Windows.Forms.TextBox TxtConvertHex;
     }
 }
 
